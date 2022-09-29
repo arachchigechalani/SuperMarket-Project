@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="631.0" prefWidth="789.0" style="-fx-background-color: #efe1f7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveCustomerFormController">
+   <children>
+      <TextField fx:id="txtCustId" layoutX="211.0" layoutY="111.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="57.0" prefWidth="547.0" promptText="Customer Id">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustTitle" layoutX="214.0" layoutY="218.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="57.0" prefWidth="547.0" promptText="Customer Title">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustGender" layoutX="211.0" layoutY="336.0" onKeyReleased="#textFields_Key_Realeased" prefHeight="57.0" prefWidth="547.0" promptText="Gender">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </TextField>
+      <Pane prefHeight="78.0" prefWidth="789.0" style="-fx-background-color: #a951e0;">
+         <children>
+            <Label layoutX="240.0" layoutY="11.0" prefHeight="40.0" prefWidth="286.0" text="Save Customer Form" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Separator layoutX="-8.0" layoutY="51.0" prefHeight="2.0" prefWidth="803.0" style="-fx-background-color: #e8b735;" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="23.0" layoutY="507.0" onAction="#btnSave_OnAction" prefHeight="57.0" prefWidth="735.0" style="-fx-background-color: #0e3c66;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="26.0" layoutY="121.0" text="Customer Id :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="229.0" text="Customer Title :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="346.0" text="Gender :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

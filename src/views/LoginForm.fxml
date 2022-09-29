@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="logInContext" prefHeight="624.0" prefWidth="1026.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <TextField fx:id="txtName" layoutX="703.0" layoutY="297.0" prefHeight="54.0" prefWidth="308.0" promptText="User Name">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <Text layoutX="521.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name :" wrappingWidth="170.00000493228436">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font></Text>
+      <PasswordField fx:id="txtPassword" layoutX="703.0" layoutY="391.0" prefHeight="54.0" prefWidth="308.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></PasswordField>
+      
+
+      <Label layoutX="589.0" layoutY="14.0" prefHeight="53.0" prefWidth="272.0" text="LOGIN FORM" textFill="#1e830c">
+         <font>
+            <Font name="Bauhaus 93" size="46.0" />
+         </font>
+      </Label>
+      <Separator layoutX="469.0" layoutY="65.0" prefHeight="3.0" prefWidth="558.0" style="-fx-background-color: #0dba4d;" />
+      <Text layoutX="525.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password   :" wrappingWidth="162.00000493228436">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="181.0" layoutX="669.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/1.6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="468.0" fitWidth="507.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/img7.png" />
+         </image></ImageView>
+      <ImageView fitHeight="124.0" fitWidth="128.0" layoutX="172.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/next.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="811.0" layoutY="516.0" onAction="#menuFormOnAction" prefHeight="53.0" prefWidth="201.0" style="-fx-background-color: #0dd682;" text="LogIn" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="547.0" layoutY="516.0" onAction="#closeOnAction" prefHeight="53.0" prefWidth="201.0" style="-fx-background-color: #0dd682;" text="Cancel" textFill="#3c1d1d">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="customerOrderContext" prefHeight="802.0" prefWidth="1239.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="815.0" fitWidth="851.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/DASH-1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="198.0" layoutY="44.0" prefHeight="73.0" prefWidth="455.0" text="FD SuperMarket">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="143.0" fitWidth="160.0" layoutX="884.0" layoutY="634.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/next.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1027.0" layoutY="662.0" onAction="#loginFormOnAction" prefHeight="73.0" prefWidth="172.0" style="-fx-background-color: #cae8ed;" text="NEXT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

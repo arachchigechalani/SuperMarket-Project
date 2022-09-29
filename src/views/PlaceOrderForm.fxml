@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageOrderContext" prefHeight="804.0" prefWidth="1041.0" style="-fx-background-color: #fafbfc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderFormController">
+   <children>
+      <Separator prefHeight="6.0" prefWidth="1041.0" style="-fx-background-color: black;" />
+      <Label layoutX="24.0" layoutY="84.0" prefHeight="37.0" prefWidth="95.0" text="Order Id :" textFill="#0f9e11">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="3.0" prefHeight="72.0" prefWidth="1041.0" style="-fx-background-color: #0e2245;">
+         <children>
+            <Label layoutX="434.0" layoutY="12.0" prefHeight="45.0" prefWidth="176.0" text="Place Order" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblPlaceOrder" layoutX="14.0" layoutY="357.0" prefHeight="374.0" prefWidth="1011.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="99.0" text="ID" />
+          <TableColumn fx:id="colDesc" prefWidth="204.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="101.0" text="QTY" />
+            <TableColumn fx:id="colItemType" prefWidth="213.0" text="Item Type" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="191.0" text="Unit Price" />
+            <TableColumn fx:id="colTotalAmount" prefWidth="202.0" text="Total Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="141.0" prefHeight="37.0" prefWidth="132.0" text="Customer Id" textFill="#104610">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="181.0" prefHeight="37.0" prefWidth="132.0" text="Item Id" textFill="#104610">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCustomerId" layoutX="146.0" layoutY="144.0" prefHeight="31.0" prefWidth="103.0" />
+      <ComboBox fx:id="cmbItemId" layoutX="146.0" layoutY="184.0" prefHeight="31.0" prefWidth="103.0" />
+      <TextField fx:id="txtCustomerTitle" disable="true" layoutX="422.0" layoutY="144.0" prefHeight="31.0" prefWidth="218.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtItemDesc" disable="true" layoutX="432.0" layoutY="184.0" prefHeight="31.0" prefWidth="594.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtItemPrice" disable="true" layoutX="109.0" layoutY="230.0" prefHeight="31.0" prefWidth="139.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtItemQty" disable="true" layoutX="346.0" layoutY="230.0" prefHeight="31.0" prefWidth="152.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtItemType" disable="true" layoutX="648.0" layoutY="230.0" prefHeight="31.0" prefWidth="378.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="268.0" layoutY="141.0" prefHeight="37.0" prefWidth="152.0" text="Customer Title" textFill="#104610">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="181.0" prefHeight="37.0" prefWidth="152.0" text="Item Description" textFill="#104610">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="227.0" prefHeight="37.0" prefWidth="111.0" text="Item Price" textFill="#104610">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="227.0" prefHeight="37.0" prefWidth="85.0" text="Item Qty" textFill="#104610">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="553.0" layoutY="227.0" prefHeight="37.0" prefWidth="95.0" text="Item Type" textFill="#104610">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderQty" layoutX="122.0" layoutY="288.0" prefHeight="37.0" prefWidth="527.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextField>
+      <Label layoutX="18.0" layoutY="288.0" prefHeight="37.0" prefWidth="103.0" text="Order Qty" textFill="#104610">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="748.0" layoutY="288.0" onAction="#btnAddToCart_OnAction" prefHeight="51.0" prefWidth="278.0" style="-fx-background-color: #38ab07;" text="Add To Cart" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblOrderId" layoutX="126.0" layoutY="87.0" prefHeight="31.0" prefWidth="63.0" text="order" textFill="#3d0abc">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="687.0" layoutY="141.0" prefHeight="37.0" prefWidth="78.0" text="Gender" textFill="#104610">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtGender" disable="true" layoutX="765.0" layoutY="144.0" prefHeight="31.0" prefWidth="259.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <Label layoutX="20.0" layoutY="744.0" prefHeight="37.0" prefWidth="158.0" text="Total Amount :" textFill="#fc2331">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTotalAmount" layoutX="180.0" layoutY="747.0" prefHeight="31.0" prefWidth="152.0" />
+      <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="748.0" layoutY="737.0" onAction="#btnPlaceOrder_OnAction" prefHeight="51.0" prefWidth="278.0" style="-fx-background-color: #a66708;" text="Place Order" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

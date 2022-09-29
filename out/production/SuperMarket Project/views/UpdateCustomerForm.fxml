@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="636.0" prefWidth="701.0" style="-fx-background-color: #f1e4f2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateCustomerFormController">
+   <children>
+      <Label layoutX="36.0" layoutY="131.0" text="Customer Id :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="89.0" prefWidth="701.0" style="-fx-background-color: #780b80;">
+         <children>
+            <Label layoutX="240.0" layoutY="11.0" prefHeight="40.0" prefWidth="286.0" text="Update Customer" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="36.0" layoutY="239.0" text="Customer Title :">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="356.0" text="Gender :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustId" editable="false" layoutX="221.0" layoutY="121.0" prefHeight="57.0" prefWidth="449.0" promptText="Customer Id">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustTitle" layoutX="221.0" layoutY="229.0" prefHeight="57.0" prefWidth="449.0" promptText="Customer Title">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustGender" layoutX="221.0" layoutY="346.0" prefHeight="57.0" prefWidth="449.0" promptText="Gender">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="32.0" layoutY="517.0" onAction="#btnUpdate_OnAction" prefHeight="57.0" prefWidth="650.0" style="-fx-background-color: #0e3c66;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
